@@ -25,7 +25,7 @@ setText("")}
         <h1>Task Tracker</h1>
         <button
           className="btn" 
-          onDoubleClick={()=>setGoster(!goster)}
+          onClick={()=>setGoster(!goster)}
          
         >
            Show Add Text Bar

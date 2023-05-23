@@ -22,7 +22,7 @@ setGorevler(newArray)
     <div >
       {gorevler.map(({id,text,day,bitti}) => {
         return (
-          <div  key={id} className={bitti? "done": "gorev" } onClick={()=>degistir(id)}>
+          <div  key={id} className={bitti? "done": "gorev" } onDoubleClick={()=>degistir(id)}>
             <h3>
               {text}
               <FaTimesCircle style={{ color: "red" }} />
