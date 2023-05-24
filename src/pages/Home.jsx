@@ -8,23 +8,18 @@ import Data from "../helper/Data";
 //******* */
 
 
-import axios from "axios";
+
 
 const Home = () => {
 console.log(Data);
 
 const [gorevler,setGorevler]=useState([]);
 
-// const getGorevler=()=>{
-//  
-// }
+
 console.log(gorevler);
 useEffect(()=>{
    setGorevler(Data)
 },[])
-
-
-
 
 const postGorev=(yeniVeri)=>{
 
@@ -43,3 +38,50 @@ console.log(gorevler);
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//bu sekilde consolda bize ne cesit bir data geldiini goruruz.Array o.i.useState icine [] yaptik
+
+
+// setGorevler vasitasi ile gorevlere Data yi ekleyelim.ve bunu acikta cagirinca sonsuz donguye girmesin diye useEffect ile sarmallayalim.
+
+// asagida GorevleriGöster sayfasina gorevleri gonderip orda karsilayalim
+
+
+
+//yeni veri girisi icin GorevEkle sayfasina gidecek fonksiyonu yazalim.Bu useState ile olmayacak.normal fonksiyon olacak.yine ayni Array e ekleyecegi icin setGorevlere ekliyoruz bu yeni veriyi.Ama eski veriler kalacak.Bunu [...gorevler] diyerek eski array kalacak diyerek yapiyorz.yeni veriyi de o array e ekliyoruz.Ve GorevEkle sayfasina gonderiyorz.
+
+
+
+{
+  /* GorevleriGoster sayfasinda verileri tiklayinca ustunu cizsin x ya basinca da silsin diye Arrayimizin tamircisini gonderelim o sayfaya.   */
+}
